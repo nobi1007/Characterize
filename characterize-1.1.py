@@ -5,9 +5,9 @@ Created on Wed May  1 15:10:17 2019
 @author: Shyam Mittal
 """
 # these variables can be changed
-height = 100
-width = 130
-character = 'XX'
+height = 65
+width = 100
+character = 'X'
 
 
 import cv2
@@ -27,7 +27,7 @@ for i in codes:
     all_colors_list.append(tuple(temp))
 all_colors = np.array(all_colors_list)
     
-x = cv2.imread('characterize_Amitabh-Bachchan4.jpg') #change the file location to your required image
+x = cv2.imread('characterize-companies1.png') #change the file location to your required image
 
 #array_x = np.array(x)
 #print(np.shape(array_x))
