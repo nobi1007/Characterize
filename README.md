@@ -36,3 +36,6 @@ https://github.com/nobi1007/Characterize/blob/master/output-characterize_Amitabh
     * *characterize-1.1.py in your favourite editor*
 6. Change the parameters height, width, character, filename and path 
 7. Run the file and you are done.
+
+---------------------
+## Please do leave a :star: if it was good :innocent:.
