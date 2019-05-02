@@ -24,7 +24,7 @@ https://github.com/nobi1007/Characterize/blob/master/output-characterize_Amitabh
 - Open your terminal or command Prompt
 - Paste the following code: 
 ```git clone https://github.com/nobi1007/Characterize.git && cd Characterize```
-- Open the folder Charaterize
+- Open the folder Characterize
 - Click on file >> characterize-test1.bat
 - Then open the file >> characterize-1.1.py in your favourite editor
 - Change the parameters height, width, character, filename and path 
