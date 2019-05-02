@@ -23,6 +23,8 @@ https://github.com/nobi1007/Characterize/blob/master/output-characterize_Amitabh
 
 ## Follow the steps below to run it on your PC:
 
+#### First of all make sure you have python3.6 (or greater) installed 
+
 - Open your terminal or command Prompt
 - Paste the following code: 
 ```git clone https://github.com/nobi1007/Characterize.git && cd Characterize```
