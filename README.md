@@ -1,5 +1,7 @@
 # Characterize
-Converts the given image(.jpg, .jpeg, .png) in its similar text image.
+> The main aim of Characterize is to reduce the size of the image drastically by converting it into its corresponding visual text while preserving its meaning.  
+
+-----------------
 
 ### * Output 1: [Original image](https://github.com/nobi1007/Characterize/blob/master/characterize_github.jpg)
 
