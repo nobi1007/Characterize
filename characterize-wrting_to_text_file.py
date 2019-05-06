@@ -1,7 +1,11 @@
-#from colored import fg,attr
-#rst = attr('reset')
+# -*- coding: utf-8 -*-
+"""
+Created on Sun May  5 10:39:48 2019
 
-codes = [
+@author: Shyam Mittal
+"""
+
+color_list = [
     '#000000',
     '#800000',
     '#008000',
@@ -258,14 +262,25 @@ codes = [
     '#dadada',
     '#e4e4e4',
     '#eeeeee']
-    
 
-codes_dict = {}
-for i in range(len(codes)):
-    codes_dict[codes[i]] = i
-'''
-for i in range(len(codes)):
-    color = fg(codes_dict[codes[i]])
-    print(color+"Hello World!" +rst)
-'''
-    
+f = open("file1.html",'w+')
+part1 = """
+<html>
+<head>
+<title>hghgc</title>
+<style>
+body{   
+font-size:15px;
+}
+</style>
+</head>
+<body>"""
+part2 = """"""
+for i in color_list:
+    part2 += """<span style='color:%s'>Hello </span></br>"""%i
+
+part3 = """
+</body>
+</html>"""
+fr = f.writelines(part1+part2+part3)
+f.close()
