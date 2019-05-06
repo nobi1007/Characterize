@@ -6,16 +6,15 @@ Created on Wed May  1 15:10:17 2019
 """
 # these variables can be changed
 height = 70
-width = 100
-character = '0'
+width = 120
+character = '@'
 
 import cv2
 import numpy as np
 from hex_color_codes2 import codes
 from sklearn.neighbors import NearestNeighbors
-#from colored import fg,attr
 
-#rst = attr("reset")
+#from colored import fg,attr
 
 all_colors_list = []
 
@@ -27,9 +26,6 @@ for i in codes:
 all_colors = np.array(all_colors_list)
     
 x = cv2.imread('characterize_github.jpg') #change the file location to your required image
-
-#array_x = np.array(x)
-#print(np.shape(array_x))
 
 new_x = cv2.resize(x,(width,height))
 
@@ -63,6 +59,7 @@ part1 = """
 <style>
 body{   
 font-size:5px;
+background-color:black;
 }
 </style>
 </head>
@@ -75,14 +72,12 @@ for i in range(height):
         part2 += """<span style='color:%s'>%s</span>"""%(color_check_arr[i][j],character)
         #print(color_check_arr[i][j])
     part2 += """</br>"""
-
 part3 = """
 </body>
 </html>"""
 
 fr = f.writelines(part1+part2+part3)
 f.close()
-
 
 print(np.shape(new_x))
 cv2.imshow("Github_logo",new_x)
