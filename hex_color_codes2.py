@@ -1,6 +1,3 @@
-#from colored import fg,attr
-#rst = attr('reset')
-
 codes = [
     '#000000',
     '#800000',
@@ -258,14 +255,4 @@ codes = [
     '#dadada',
     '#e4e4e4',
     '#eeeeee']
-    
-
-codes_dict = {}
-for i in range(len(codes)):
-    codes_dict[codes[i]] = i
-'''
-for i in range(len(codes)):
-    color = fg(codes_dict[codes[i]])
-    print(color+"Hello World!" +rst)
-'''
-    
+codes = list(set(codes))

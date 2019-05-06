@@ -263,6 +263,8 @@ color_list = [
     '#e4e4e4',
     '#eeeeee']
 
+character = "jkejbjh"
+
 f = open("file1.html",'w+')
 part1 = """
 <html>
@@ -277,7 +279,7 @@ font-size:15px;
 <body>"""
 part2 = """"""
 for i in color_list:
-    part2 += """<span style='color:%s'>Hello </span></br>"""%i
+    part2 += """<span style='color:%s'>%s </span></br>"""%(i,character)
 
 part3 = """
 </body>

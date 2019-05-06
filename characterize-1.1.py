@@ -12,7 +12,7 @@ character = 'X'
 
 import cv2
 import numpy as np
-from hex_color_codes import codes_dict,codes
+from hex_color_codes1 import codes_dict,codes
 from sklearn.neighbors import NearestNeighbors
 from colored import fg,attr
 
@@ -27,7 +27,7 @@ for i in codes:
     all_colors_list.append(tuple(temp))
 all_colors = np.array(all_colors_list)
     
-x = cv2.imread('characterize-companies1.png') #change the file location to your required image
+x = cv2.imread('characterize_github.jpg') #change the file location to your required image
 
 #array_x = np.array(x)
 #print(np.shape(array_x))

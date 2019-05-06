@@ -5,13 +5,13 @@ Created on Wed May  1 15:10:17 2019
 @author: Shyam Mittal
 """
 # these variables can be changed
-height = 65
+height = 70
 width = 100
-character = '@'
+character = '0'
 
 import cv2
 import numpy as np
-from hex_color_codes import codes
+from hex_color_codes2 import codes
 from sklearn.neighbors import NearestNeighbors
 #from colored import fg,attr
 
@@ -48,9 +48,11 @@ for i in range(height):
                 all_colors = np.array(all_colors_list)
                 nbrs = NearestNeighbors(n_neighbors=2, algorithm='ball_tree').fit(all_colors)
                 distances,indices = nbrs.kneighbors(all_colors)
-                temp_calac_val = all_colors_list[indices[256][1]]
+                temp_calac_val = all_colors_list[indices[247][1]]
                 hex_value = "#%02x%02x%02x"%temp_calac_val
-                temp_to_cca.append(hex_value)
+                color_dict[tuple(new_x[i][j])] = hex_value
+                all_colors_list = all_colors_list[:-1]
+            temp_to_cca.append(hex_value)
     color_check_arr.append(temp_to_cca)
 
 f = open("characterize-main.html",'w+')
@@ -60,7 +62,7 @@ part1 = """
 <title>hghgc</title>
 <style>
 body{   
-font-size:13px;
+font-size:5px;
 }
 </style>
 </head>
@@ -71,6 +73,7 @@ part2 = """"""
 for i in range(height):
     for j in range(width):
         part2 += """<span style='color:%s'>%s</span>"""%(color_check_arr[i][j],character)
+        #print(color_check_arr[i][j])
     part2 += """</br>"""
 
 part3 = """
