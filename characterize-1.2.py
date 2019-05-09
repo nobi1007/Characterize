@@ -6,7 +6,7 @@ Created on Wed May  1 15:10:17 2019
 """
 # these variables can be changed
 height = 70
-width = 120
+width = 50
 character = '@'
 
 import cv2
@@ -58,7 +58,7 @@ part1 = """
 <title>hghgc</title>
 <style>
 body{   
-font-size:5px;
+font-size:1px;
 background-color:black;
 }
 </style>
